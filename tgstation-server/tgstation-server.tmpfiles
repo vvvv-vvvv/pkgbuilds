@@ -1,0 +1,2 @@
+d /var/lib/tgstation-server 0755 tgstation-server tgstation-server
+d /var/lib/tgstation-server/data 0700 tgstation-server tgstation-server

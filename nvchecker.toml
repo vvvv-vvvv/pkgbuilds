@@ -1,3 +1,10 @@
 [__config__]
 oldver = "old_ver.json"
 newver = "new_ver.json"
+
+[tgstation-server]
+source = "github"
+github = "tgstation/tgstation-server"
+use_max_tag = true
+prefix = "tgstation-server-v"
+include_regex = "tgstation-server-v.*"

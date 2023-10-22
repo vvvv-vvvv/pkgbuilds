@@ -1,0 +1,25 @@
+pkgbase = tgstation-server
+	pkgdesc = A production scale tool for BYOND server management
+	pkgver = 5.16.4
+	pkgrel = 1
+	url = https://github.com/tgstation/tgstation-server
+	install = tgstation-server.install
+	arch = x86_64
+	license = AGPL3
+	makedepends = dotnet-sdk
+	makedepends = ed
+	makedepends = git
+	makedepends = npm
+	depends = aspnet-runtime-6.0
+	source = tgstation-server::git+https://github.com/tgstation/tgstation-server#tag=tgstation-server-v5.16.4
+	source = tgs-configure
+	source = tgstation-server.service
+	source = tgstation-server.sysusers
+	source = tgstation-server.tmpfiles
+	b2sums = SKIP
+	b2sums = f7e6b84852494b3b8e1fe6b915df7ced78d65cff4978ba4482f01139ef17d1534b292f70ad2e84381f5e1a829058033aee5ac680342784ed91fc9ff324f67cfa
+	b2sums = f711b5d2c8fece9ad358aa5975a93c833a66ce0d78886549902e9ae0f4af2c8a26fff61aed5fc342da2ae1fb7182f6ba8a5d222ded81bd6b684099efec6812bc
+	b2sums = e7bdd81fe7b7cd9b6e83484d5887b616759ace86e20e503ead704e7f68f73c4f354f8ebd21fa8295518a9fcd66958f98af653dd3048f9d93d9bec6ad63437587
+	b2sums = 93a054546a26a131a7a93d61b4b18b875c0aedb5a842eca91f159f2fdc588951fc0bf21b388c904d6818d3d656aad4e1bea51b231b3505e3fb5997d99984978d
+
+pkgname = tgstation-server

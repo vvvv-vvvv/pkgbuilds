@@ -1,0 +1,6 @@
+post_install() {
+  echo ":: tgstation-server is now installed but must first be configured"
+  echo "   Run 'tgs-configure --appsettings-base-path=/var/lib/tgstation-server/data' to interactively configure your server"
+  echo "   Alternatively, edit '/var/lib/tgstation-server/data/appsettings.Production.yml' to your desired specifications"
+  echo "   An example config may be found at '/usr/share/doc/tgstation-server/examples/appsettings.yml'"
+}

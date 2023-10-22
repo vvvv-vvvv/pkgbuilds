@@ -1,0 +1,25 @@
+[Unit]
+Description=tgstation-server
+After=network.target
+After=mysql.service
+After=mariadb.service
+After=postgresql.service
+After=mssql-server.service
+
+[Service]
+Type=notify-reload
+NotifyAccess=all
+Environment=TGSROOT=/var/lib/tgstation-server
+ExecStart=/usr/bin/tgs --appsettings-base-path=${TGSROOT}/data --Internal:UsingSystemD=true
+User=tgstation-server
+TimeoutStartSec=600
+Restart=on-failure
+KillMode=process
+ReloadSignal=SIGUSR2
+RestartKillSignal=SIGUSR2
+AmbientCapabilities=CAP_SYS_NICE
+WatchdogSec=60
+WatchdogSignal=SIGTERM
+
+[Install]
+WantedBy=multi-user.target

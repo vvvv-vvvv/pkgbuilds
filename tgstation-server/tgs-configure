@@ -1,0 +1,4 @@
+#!/bin/sh
+tmp="$(mktemp -u)"
+trap 'rm -f -- "$tmp"' EXIT
+exec dotnet /usr/lib/tgstation-server/lib/Default/Tgstation.Server.Host.dll "$tmp" --General:SetupWizardMode=Force $@
