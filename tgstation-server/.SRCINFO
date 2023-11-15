@@ -1,6 +1,6 @@
 pkgbase = tgstation-server
 	pkgdesc = A production scale tool for BYOND server management
-	pkgver = 5.17.2
+	pkgver = 5.17.3
 	pkgrel = 1
 	url = https://github.com/tgstation/tgstation-server
 	install = tgstation-server.install
@@ -11,7 +11,7 @@ pkgbase = tgstation-server
 	makedepends = git
 	makedepends = npm
 	depends = aspnet-runtime-6.0
-	source = tgstation-server::git+https://github.com/tgstation/tgstation-server#tag=tgstation-server-v5.17.2
+	source = tgstation-server::git+https://github.com/tgstation/tgstation-server#tag=tgstation-server-v5.17.3
 	source = tgs-configure
 	source = tgstation-server.service
 	source = tgstation-server.sysusers
