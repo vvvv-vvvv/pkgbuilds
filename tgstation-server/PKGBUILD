@@ -2,7 +2,7 @@
 
 pkgname=tgstation-server
 pkgver=5.18.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A production scale tool for BYOND server management"
 arch=('x86_64') # purposefully not any
 url="https://github.com/tgstation/tgstation-server"
@@ -38,8 +38,8 @@ build() {
   cd "${srcdir}/${pkgname}"
   export DOTNET_CLI_TELEMETRY_OPTOUT=1
   dotnet restore
-  dotnet publish src/Tgstation.Server.Host.Console --no-self-contained --use-current-runtime -p:DebugType=none -c ReleaseNoWindows -o artifacts
-  dotnet publish src/Tgstation.Server.Host --no-self-contained --use-current-runtime -p:DebugType=none -c ReleaseNoWindows -o artifacts/lib/Default
+  dotnet publish src/Tgstation.Server.Host.Console --no-self-contained --use-current-runtime -p:RunAnalyzers=false -p:DebugType=none -c ReleaseNoWindows -o artifacts
+  dotnet publish src/Tgstation.Server.Host --no-self-contained --use-current-runtime -p:RunAnalyzers=false -p:DebugType=none -c ReleaseNoWindows -o artifacts/lib/Default
 }
 
 package() {

@@ -1,7 +1,7 @@
 pkgbase = tgstation-server
 	pkgdesc = A production scale tool for BYOND server management
 	pkgver = 5.18.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/tgstation/tgstation-server
 	install = tgstation-server.install
 	arch = x86_64
