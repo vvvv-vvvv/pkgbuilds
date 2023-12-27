@@ -1,7 +1,7 @@
 # Maintainer: forest
 
 pkgname=tgstation-server
-pkgver=6.0.0
+pkgver=6.0.1
 pkgrel=1
 pkgdesc="A production scale tool for BYOND server management"
 arch=('x86_64') # purposefully not any
